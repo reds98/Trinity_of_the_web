@@ -81,7 +81,7 @@ Hay seis diferentes tipos de titulos en HTML los cuales son los siguientes:
  <h1> Titulo 1</h1>
  ```
  <h1> Titulo 1</h1>
- * ```html
+ * ``` html
  <h2> Titulo 2</h2>
  ```
  <h2> Titulo 2</h2>
