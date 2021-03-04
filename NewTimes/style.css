@@ -1,0 +1,98 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  padding: 10px;
+}
+.half {
+  width: 50%;
+}
+.quarter {
+  width: 25%;
+}
+.three-quarter {
+  width: 75%;
+}
+.article-image {
+  width: 100%;
+}
+
+.other-sections {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+.list {
+  padding: 10px;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+.no-points {
+  list-style-type: none;
+}
+.site-section {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+.site-section-politics {
+  background-color: #ffeaa7;
+}
+.site-section-technology {
+  background-color: #81ecec;
+}
+.site-section-local {
+  background-color: #55efc4;
+}
+.site-section-opinion {
+  background-color: #74b9ff;
+}
+.site-section-sports {
+  background-color: #a29bfe;
+}
+.section-link {
+  color: black;
+  text-decoration: none;
+  font-size: 30px;
+  padding-left: 30px;
+  font-weight: bold;
+  font-family: "Futura";
+  color: #666;
+}
+.section-link:hover {
+  text-decoration: underline;
+}
+
+.title {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: normal;
+  font-size: 60px;
+  text-align: center;
+}
+.title-article {
+  font-weight: normal;
+  text-align: center;
+  font-style: italic;
+}
+.container-article {
+  padding: 10px;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+.row {
+  display: flex;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
