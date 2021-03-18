@@ -1,0 +1,54 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.row-end {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.result {
+  background-color: black;
+  color: white;
+  font-family: monospace;
+  font-size: 40px;
+}
+.quarter {
+  width: 25%;
+}
+.half {
+  width: 50%;
+}
+.three-quarter {
+  width: 75%;
+}
+.button-item {
+  height: 100px;
+  font-size: 40px;
+  cursor: pointer;
+  border: 2px solid black;
+  color: black;
+  background-color: #d8d9db;
+}
+.button-item:last-child {
+  background-color: #df974c;
+  color: white;
+}
+.button-item:hover {
+  background-color: #ebebeb;
+}
+.button-item:last-child:hover {
+  background-color: #dab58e;
+  color: white;
+}
